@@ -1,0 +1,137 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+}
+
+.panel {
+    width: 600px;
+    /* height: 500px; */
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    /* align-items: flex-start;
+    flex-direction: column; */
+}
+
+.img_box {
+    min-width: 50%;
+}
+
+.img_horizontal {
+    width: 0;
+    display: none;
+}
+
+.img_box img {
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 15px 0 0 15px;
+    height: 100%;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 25px;
+}
+
+.heading {
+    font-size: 16px;
+    color: #a7a7a0;
+    letter-spacing: 8px;
+    text-align: left;
+    margin-top: 5px;
+    text-transform: uppercase;
+
+}
+
+.content {
+    text-decoration: double;
+    font-size: 33px;
+    margin-top: 0;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.description {
+    font-size: 17px;
+    color: #a7a7a0;
+    margin-top: 0px;
+    line-height: 23px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.price {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: #157d17;
+    margin-right: 20px;
+}
+
+.price2 {
+    /* align-items: baseline; */
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.button {
+    margin-top: 30px;
+    text-align: center;
+    border: 2px solid #157d17;
+    border-radius: 15px;
+    justify-content: center;
+    padding: 15px;
+    color: white;
+    background-color: #2d582d;
+}
+
+@media (max-width: 850px) {
+
+    .img_box {
+        display: none;
+    }
+
+    .panel {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* min-height: 100vh; */
+        border-radius: 15px;
+    }
+
+    .img_horizontal img {
+        max-width: 100%;
+        display: inline-block;
+        border-radius: 15px 15px 0 0;
+        height: 100%;
+    }
+
+    .img_horizontal {
+        display: block;
+        min-width: 100%;
+        border: 1px;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .heading {
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+
+
+
+}
